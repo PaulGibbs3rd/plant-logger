@@ -16,7 +16,7 @@
 
 plugins {
     id 'application'
-    id 'org.openjfx.javafxplugin' version '0.0.13'
+    id 'org.openjfx.javafxplugin' version '0.0.14'
 }
 
 ext {
@@ -38,19 +38,20 @@ dependencies {
     natives "com.esri.arcgisruntime:arcgis-java-resources:$arcgisVersion"
     // handle SLF4J http://www.slf4j.org/codes.html#StaticLoggerBinder using a no-operation logger
     implementation "org.slf4j:slf4j-nop:2.0.5"
-    implementation 'com.pi4j:pi4j-core:2.3.0'
-    implementation 'com.pi4j:pi4j-plugin-raspberrypi:2.3.0'
-    implementation 'com.pi4j:pi4j-plugin-pigpio:2.3.0'
+    //pi4j
+    implementation 'com.pi4j:pi4j-core:1.4'
+    //pi4j camera
+    //implementation 'com.pi4j:pi4j-plugin-pi-camera:2.0'
 }
 
 javafx {
-    version = "17.0.2"
+    version = "17.0.7"
     modules = [ 'javafx.controls', 'javafx.graphics', 'javafx.fxml', 'javafx.web', 'javafx.media' ]
 }
 
 application {
-    mainModule = "com.mbcoder.iot.gpslogger"
-    mainClass = "com.mbcoder.iot.gpslogger.GPS_Logger"
+    mainModule = "com.mycompany.app"
+    mainClass = "com.mycompany.app.App"
 }
 
 task copyNatives(type: Copy) {
