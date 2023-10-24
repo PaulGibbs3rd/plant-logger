@@ -14,15 +14,12 @@
  * limitations under the License.
  */
 
-module com.mbcoder.iot.gpslogger {
+module com.mycompany.app {
   // modules required by the app
   requires com.esri.arcgisruntime;
   requires javafx.graphics;
   requires org.slf4j.nop;
-
-  // Pi4J MODULES
-  requires com.pi4j;
-  requires com.pi4j.plugin.pigpio;
-
-  exports com.mbcoder.iot.gpslogger;
+  requires pi4j.core;  // Add this line to include Pi4J
+  
+  exports com.mycompany.app;
 }
