@@ -1,4 +1,4 @@
-
+TODO: Update readme to plant iot content
 Welcome to the ArcGIS Maps SDK for Java!
 
 This directory contains an early adopter release of the Maps SDK for Java which supports ARM Linux platforms.  
