@@ -1,3 +1,5 @@
+TODO: Update to plant IoT Project
+
 # java-gradle-starter-project
 
 Here is a starter project for the ArcGIS Maps SDK for Java with Gradle. 
