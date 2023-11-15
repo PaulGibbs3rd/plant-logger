@@ -1,10 +1,11 @@
-TODO: Update to plant IoT Project
 
 ## Plant Logger
 
 An ArcGIS-enabled IoT device using a Raspberry Pi, the ArcGIS Maps SDK for Java, and ArcGIS Online. This device continually monitors houseplant health, encompassing aspects like soil moisture and growth.
 
 ## Hardware Configuration 
+
+![raspberry pi 4 with camera, capacitive moisture sensor and gps module](https://github.com/PaulGibbs3rd/plant-logger/blob/main/rpi%20setup.jpg)
 
 Raspberry Pi 4B (8GB RAM)
 Raspberry Pi Camera with lens
